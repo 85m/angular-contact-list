@@ -21,7 +21,7 @@ import { ContactC, ContactService }  from './contact.service';
   `
 })
 export class ContactDetailComponent implements OnInit {
-  contactInfo: Contact;
+  contactInfo: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,7 +32,7 @@ export class ContactDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params
         .switchMap((params: Params) => this.contactService.getContact(+params['id']))
-        .subscribe((contactData: ContactC) => this.contactInfo = contactData);
+        .subscribe((contactData: any) => this.contactInfo = contactData);
   }
 
   goBack() {

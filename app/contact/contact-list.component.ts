@@ -21,7 +21,7 @@ import { ContactC, ContactService }  from './contact.service';
 })
 export class ContactListComponent implements OnInit {
 
-  contacts: Observable<ContactC[]>;
+  contacts : any;
 
   private selectedId: number;
 
@@ -32,12 +32,12 @@ export class ContactListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-/*    this.contacts = this.route.params
-      .switchMap((params: Params) => {
-        this.selectedId = +params['id'];
-        return this.service.getAllContacts();
-      });*/
-    this.contacts = this.service.getAllContacts();
+    // this.contacts = this.route.params
+    //     .switchMap((params: Params) => {
+    //       this.selectedId = +params['id'];
+    //       return this.service.getAllContacts();
+    //     });
+   this.contacts = this.service.getAllContacts();
   }
 
   isSelected(contact: ContactC) { return contact.id === this.selectedId; }
