@@ -16,8 +16,8 @@ import { ContactC, ContactService }  from './contact.service';
           </li>
         </ul>
     </div>
-
-  `
+  `,
+  // pipe:[ContactFilterPipe]
 })
 export class ContactListComponent implements OnInit {
 
@@ -40,9 +40,9 @@ export class ContactListComponent implements OnInit {
    this.contacts = this.service.getAllContacts();
   }
 
-  isSelected(contact: ContactC) { return contact.id === this.selectedId; }
+  isSelected(contact: any) { return contact.id === this.selectedId; }
 
-  onSelect(contact: ContactC) {
+  onSelect(contact: any) {
     this.router.navigate(['/detail', contact.id]);
   }
 }
