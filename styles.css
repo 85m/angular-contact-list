@@ -1,3 +1,7 @@
+body{
+    background-color: #f3f3f3;
+}
+
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
@@ -12,3 +16,20 @@ h1 {
 .list-group-item:hover{
   background-color: #f6f6f6;
 }
+
+.search-bar{
+    margin: 0 0 20px 0;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    height:30px;
+}
+
+.glyphicon-search{
+    color: lightgray;
+    font-size: 20px;
+    padding: 4px 6px;
+}
+
+.search-bar:focus { border-bottom: 1px solid black; }
+.search-bar:focus + .glyphicon-search{  color: black;  }

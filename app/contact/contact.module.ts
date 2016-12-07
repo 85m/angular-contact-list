@@ -11,6 +11,8 @@ import { ContactRoutingModule } from './contact-routing.module';
 
 import { HttpModule }  from '@angular/http';
 
+import { ContactFilterPipe } from './contact-filter.pipe';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -20,7 +22,8 @@ import { HttpModule }  from '@angular/http';
   ],
   declarations: [
     ContactListComponent,
-    ContactDetailComponent
+    ContactDetailComponent,
+    ContactFilterPipe
   ],
   providers: [
     ContactService

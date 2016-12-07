@@ -15,14 +15,14 @@ import { AppRoutingModule }     from './app-routing.module';
 
 import { ContactModule }         from './contact/contact.module';
 
-// import { ContactFilterPipe }  from './contact/contact-filter.pipe';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ContactModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   declarations: [
     AppComponent
