@@ -1,9 +1,7 @@
-import 'rxjs/add/operator/switchMap';
-import { Observable } from 'rxjs/Observable';
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 
-import { ContactC, ContactService }  from './contact.service';
+import { ContactService }  from './contact.service';
 
 @Component({
   template: `
@@ -16,13 +14,10 @@ import { ContactC, ContactService }  from './contact.service';
           </li>
         </ul>
     </div>
-  `,
-  // pipe:[ContactFilterPipe]
+  `
 })
 export class ContactListComponent implements OnInit {
-
   contacts : any;
-
   private selectedId: number;
 
   constructor(
@@ -32,12 +27,7 @@ export class ContactListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    // this.contacts = this.route.params
-    //     .switchMap((params: Params) => {
-    //       this.selectedId = +params['id'];
-    //       return this.service.getAllContacts();
-    //     });
-   this.contacts = this.service.getAllContacts();
+    this.service.getAllContacts().subscribe(c => this.contacts = c);
   }
 
   isSelected(contact: any) { return contact.id === this.selectedId; }

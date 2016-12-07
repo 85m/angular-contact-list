@@ -9,11 +9,14 @@ import { ContactService } from './contact.service';
 
 import { ContactRoutingModule } from './contact-routing.module';
 
+import { HttpModule }  from '@angular/http';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    ContactRoutingModule
+    ContactRoutingModule,
+    HttpModule
   ],
   declarations: [
     ContactListComponent,

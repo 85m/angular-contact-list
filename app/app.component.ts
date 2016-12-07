@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import 'rxjs/Rx'; // adds ALL RxJS statics & operators to Observable
+
 @Component({
   selector: 'my-app',
   template: `

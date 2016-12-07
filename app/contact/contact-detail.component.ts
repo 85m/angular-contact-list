@@ -31,8 +31,8 @@ export class ContactDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params
-        .switchMap((params: Params) => this.contactService.getContact(+params['id']))
-        .subscribe((contactData: any) => this.contactInfo = contactData);
+        .switchMap( params => this.contactService.getContact( +params['id']) )
+        .subscribe(cData => this.contactInfo = cData);
   }
 
   goBack() {
