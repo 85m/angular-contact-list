@@ -33,3 +33,26 @@ h1 {
 
 .search-bar:focus { border-bottom: 1px solid black; }
 .search-bar:focus + .glyphicon-search{  color: black;  }
+
+
+.add-form{
+    border-bottom: 1px solid lightgray;
+    margin: 10px 0 10px 0;
+    padding: 20px;
+}
+.add-form label{
+    font-weight: 100;
+}
+.add-form input{
+    margin: 0 0 20px 0;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    outline: none;
+    height:30px;
+}
+.add-form button{
+    border: 1px solid lightslategray;
+    background-color: white;
+    outline: none;
+    color: lightslategray;
+}

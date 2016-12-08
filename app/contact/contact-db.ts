@@ -1,0 +1,32 @@
+import { InMemoryDbService } from 'angular-in-memory-web-api';
+
+export class InMemoryDataService implements InMemoryDbService {
+    createDb() {
+        let contacts = [
+            {id:1,firstname:"Julia",lastname:"Young",email:"jyoung0@blogtalkradio.com"},
+            {id:2,firstname:"Paula",lastname:"Mitchell",email:"pmitchell1@arstechnica.com"},
+            {id:3,firstname:"Gary",lastname:"Schmidt",email:"gschmidt2@live.com"},
+            {id:4,firstname:"Bonnie",lastname:"Henry",email:"bhenry3@nps.gov"},
+            {id:5,firstname:"Katherine",lastname:"Mills",email:"kmills4@hatena.ne.jp"},
+            {id:6,firstname:"Brian",lastname:"Ray",email:"bray5@sfgate.com"},
+            {id:7,firstname:"Linda",lastname:"Patterson",email:"lpatterson6@apple.com"},
+            {id:8,firstname:"Anne",lastname:"Medina",email:"amedina7@usnews.com"},
+            {id:9,firstname:"Amy",lastname:"Parker",email:"aparker8@shop-pro.jp"},
+            {id:10,firstname:"Louis",lastname:"Romero",email:"lromero9@mail.ru"},
+            {id:11,firstname:"Judy",lastname:"Harper",email:"jharpera@prlog.org"},
+            {id:12,firstname:"Ashley",lastname:"Arnold",email:"aarnoldb@about.com"},
+            {id:13,firstname:"Michael",lastname:"Hicks",email:"mhicksc@mayoclinic.com"},
+            {id:14,firstname:"Kathryn",lastname:"Cook",email:"kcookd@google.co.uk"},
+            {id:15,firstname:"Wanda",lastname:"Taylor",email:"wtaylore@wp.com"},
+            {id:16,firstname:"Joan",lastname:"Dixon",email:"jdixonf@google.co.uk"},
+            {id:17,firstname:"Brandon",lastname:"Harris",email:"bharrisg@plala.or.jp"},
+            {id:18,firstname:"Jean",lastname:"Washington",email:"jwashingtonh@squidoo.com"},
+            {id:19,firstname:"Marie",lastname:"Allen",email:"malleni@cnn.com"},
+            {id:20,firstname:"Denise",lastname:"Green",email:"dgreenj@springer.com"}
+        ];
+        return {contacts};
+    }
+}
+
+
+    

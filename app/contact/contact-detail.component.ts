@@ -11,7 +11,7 @@ import { ContactService }  from './contact.service';
   <div class="container col-2">
     <div><label>Id: </label>{{ contactInfo.id }}</div>
     <div><label>Last name: </label> {{ contactInfo.firstname }}</div>
-    <div><label>First name: </label> {{ contactInfo.last_name }}</div>
+    <div><label>First name: </label> {{ contactInfo.lastname }}</div>
     <div><label>email: </label> {{ contactInfo.email }}</div>
     <p>
       <button (click)="goBack()">Back</button>
